@@ -1,0 +1,174 @@
+:host {
+  font-family: verdana,helvetica,arial,sans-serif;
+  font-size: small;
+}
+
+:host * {
+  box-sizing: border-box;
+}
+
+div.dynamic-form {
+  border: 2px solid #red;
+}
+
+div.flex-container {
+  display: flex;
+  /*height: 500px;*/
+}
+
+table.dynamic-table {
+  display: block;
+  width: 100%;
+  /*height: 100%;*/
+  overflow-x: scroll;
+  margin: 10px 0 10px 0;
+  border-radius: 10px;
+  background: -webkit-linear-gradient(90deg, #dddddd, #FFFFFF) repeat scroll 0 0 transparent;
+  background: -moz-linear-gradient(90deg, #dddddd, #FFFFFF) repeat scroll 0 0 transparent;
+  border: 1px solid #AAAAAA;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 0 5px #AAAAAA;
+  -moz-box-shadow: 0 0 5px #AAAAAA;
+}
+
+table.dynamic-table tbody {
+  border: solid 0;
+}
+
+table.dynamic-table th,
+td.row-indicator {
+  font-weight: normal;
+  color: #6e6e6e;
+  background: -webkit-linear-gradient(90deg, #dddddd, #FFFFFF) repeat scroll 0 0 transparent;
+  background: -moz-linear-gradient(90deg, #dddddd, #FFFFFF) repeat scroll 0 0 transparent;
+}
+
+td.dynamic-table-field {
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 0px solid;
+  border-right: 0px solid;
+  padding: 0 4px 0 4px;
+}
+
+tr.dynamic-table.tr-current td {
+  color: #444444;
+}
+
+table.dynamic-table td.checkbox {
+  text-align: center;
+}
+
+table.dynamic-table td:nth-child(2) {
+  border-left: 0px solid;
+  padding-left: 2em;
+}
+
+tr.dynamic-table {
+  margin: 0;
+  padding: 0;
+}
+
+tr.dynamic-table.tr-current span.row-indicator {
+  color: black;
+}
+
+span.row-indicator {
+  color: transparent;
+}
+
+td.row-indicator {
+  width: 1.6em;
+  height: 2em;
+  position: absolute;
+  border-right: 1px solid white;
+  padding: 3px 0 0 5px;
+}
+
+th.row-indicator {
+  color: transparent;
+  position: absolute;
+  width: 1.6em;
+  height: 1.3em;
+  border-right: 1px solid white;
+  border-top-left-radius: 9px;
+}
+
+textarea.dynamic-table,
+input.dynamic-table {
+  outline: 0 none;
+  border: 0 solid;
+  border-bottom: 2px solid;
+  border-bottom-color: transparent;
+  background-color:transparent;
+  border-radius: 2px;
+  margin: 0;
+  padding: 1px 2px 1px 2px;
+  color: #6e6e6e;
+}
+
+tr.tr-current textarea.dynamic-table,
+tr.tr-current input.dynamic-table {
+  color: #333;
+}
+
+
+tr.tr-current textarea.dynamic-table.ng-valid[required],
+tr.tr-current input.dynamic-table.ng-valid[required] {
+  border-bottom-color:  #666699;
+}
+
+textarea.dynamic-table.ng-dirty,
+input.dynamic-table.ng-dirty {
+  background-color: #dddddd;
+}
+
+textarea.dynamic-table.ng-dirty.ng-invalid,
+input.dynamic-table.ng-dirty.ng-invalid {
+  border-bottom-color: red;
+  background-color: #ffdddd;
+}
+
+input.dynamic-table[type='number'] {
+  text-align: right;
+}
+
+textarea.dynamic-table:focus,
+input.dynamic-table:focus {
+  background-color: #fff;
+}
+
+input[type='checkbox'] + div {
+  width: 20px;
+  height: 1px;
+  border: 1px solid red;
+  opacity: 0;
+}
+
+input.ng-dirty[type='checkbox'] + div {
+  background-color: red;
+  opacity: 1;
+  border-color: red;
+}
+
+button.toolbar-button {
+  display: table-cell;
+  width: 60px;
+  height: 35px;
+  color: #6e6e6e;
+  text-align: center;
+  vertical-align: middle;
+  background: -webkit-linear-gradient(90deg, #eeeeee, #ffffff) repeat scroll 0 0 transparent;
+  background: -moz-linear-gradient(90deg, #eeeeee, #ffffff) repeat scroll 0 0 transparent;
+
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: 0 0 1px #AAAAAA;
+  -moz-box-shadow: 0 0 1px #AAAAAA;
+  border-width: 2px;
+}
+
+button.toolbar-button:disabled {
+  background: -webkit-linear-gradient(90deg, #dddddd, #eeeeee) repeat scroll 0 0 transparent;
+  background: -moz-linear-gradient(90deg, #dddddd, #eeeeee) repeat scroll 0 0 transparent;
+  border-width: 1px;
+}

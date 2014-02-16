@@ -1,0 +1,141 @@
+:host {
+  font-family: verdana,helvetica,arial,sans-serif;
+  font-size: small;
+}
+
+:host * {
+  box-sizing: border-box;
+}
+
+div.dynamic-form {
+  border: 2px solid #red;
+}
+
+div.flex-container {
+  display: flex;
+}
+
+fieldset.dynamic-form {
+    border: 3px solid #aeaeae;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    border: 0;
+    background: -webkit-linear-gradient(90deg, #dddddd, #FFFFFF) repeat scroll 0 0 transparent;
+    background: -moz-linear-gradient(90deg, #dddddd, #FFFFFF) repeat scroll 0 0 transparent;
+    border: 1px solid #AAAAAA;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 5px #AAAAAA;
+    -moz-box-shadow: 0 0 5px #AAAAAA;
+    margin: 60px auto 0;
+    padding: 20px;
+}
+
+legend.dynamic-form {
+  color: #6e6e6e;
+  text-align: right;
+  background: -webkit-linear-gradient(90deg, #eeeeee, #ffffff) repeat scroll 0 0 transparent;
+  background: -moz-linear-gradient(90deg, #dddddd, #eeeeee) repeat scroll 0 0 transparent;
+  background-color: #eeeeee;
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: 0 0 1px #AAAAAA;
+  -moz-box-shadow: 0 0 1px #AAAAAA;
+  padding-right: 1em;
+  padding-left: 1em;
+  position: absolute;
+  margin: -30px 0px 0px -10px;
+  border-top: 1px solid #AAAAAA;
+}
+
+tr.input-group {
+}
+
+label.dynamic-form {
+  text-align: right;
+  /*margin-top: 5px;*/
+  margin-right: 7px;
+  color: #6e6e6e;
+  /*flex: 1 1 10%;*/
+}
+
+
+
+textarea.dynamic-form,
+input.dynamic-form {
+  border: 1px solid #c8c8c8;
+  border-bottom-width: 2px;
+  border-radius: 3px;
+  padding: 2px 7px;
+  background-color: #f7f7f7;
+}
+
+textarea.dynamic-form.ng-valid[required],
+input.dynamic-form.ng-valid[required] {
+  border-bottom-color:  #666699;
+}
+
+textarea.dynamic-form.ng-dirty,
+input.dynamic-form.ng-dirty {
+  background-color: #dddddd;
+}
+
+textarea.dynamic-form.ng-dirty.ng-invalid,
+input.dynamic-form.ng-dirty.ng-invalid {
+  border-bottom-color: red;
+  background-color: #ffdddd;
+}
+
+input.dynamic-form[type='number'] {
+  text-align: right;
+}
+
+textarea.dynamic-form:focus,
+input.dynamic-form:focus {
+  background-color: #fff;
+}
+
+input[type='checkbox'] + div {
+  width: 20px;
+  height: 1px;
+  border: 1px solid red;
+  opacity: 0;
+}
+
+input.ng-dirty[type='checkbox'] + div {
+  background-color: red;
+  opacity: 1;
+  border-color: red;
+}
+
+
+label.dynamic-form,
+input.dynamic-form {
+    display: block;
+    /*flex: 1 1 30%;*/
+}
+
+button.toolbar-button {
+  display: table-cell;
+  width: 60px;
+  height: 35px;
+  color: #6e6e6e;
+  text-align: center;
+  vertical-align: middle;
+  background: -webkit-linear-gradient(90deg, #eeeeee, #ffffff) repeat scroll 0 0 transparent;
+  background: -moz-linear-gradient(90deg, #eeeeee, #ffffff) repeat scroll 0 0 transparent;
+
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: 0 0 1px #AAAAAA;
+  -moz-box-shadow: 0 0 1px #AAAAAA;
+  border-width: 2px;
+}
+
+button.toolbar-button:disabled {
+  background: -webkit-linear-gradient(90deg, #dddddd, #eeeeee) repeat scroll 0 0 transparent;
+  background: -moz-linear-gradient(90deg, #dddddd, #eeeeee) repeat scroll 0 0 transparent;
+  border-width: 1px;
+}

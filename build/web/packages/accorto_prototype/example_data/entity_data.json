@@ -1,0 +1,27 @@
+[
+	{
+		"Name": "Joe Test",
+		"ShortName": "joey",
+		"Enabled": "true",
+		"Description": "Joe the tester",
+		"Email": "joe@tester.com",
+		"URL": "http://testing.com",
+		"Costs": 12.3
+	}, {
+		"Name": "Mary Ops",
+		"ShortName": "marie",
+		"Enabled": "true",
+		"Description": "Mary from operations",
+		"Email": "mary@prod.com",
+		"URL": "http://prod.com",
+		"Costs": 22
+	}, {
+		"Name": "Alice Dev",
+		"ShortName": "alice",
+		"Enabled": "false",
+		"Description": "Alice the hacker",
+		"Email": "alice@hacker.com",
+		"URL": "http://hacking.com",
+		"Costs": 1.1
+	}
+]

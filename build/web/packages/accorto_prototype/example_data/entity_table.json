@@ -1,0 +1,51 @@
+{
+	"name": "entity",
+	"description": "table/column info",
+	"columnList": [
+		{
+			"name": "Name",
+			"description": "the name of the entity",
+			"type": "text",
+			"length": 60,
+			"mandatory": true
+		}, {
+			"name": "ShortName",
+			"description": "the short name of the entity",
+			"type": "text",
+			"length": 12,
+			"mandatory": true,
+			"regex": "^[a-z]*$"
+		}, {
+			"name": "Enabled",
+			"description": "is the entity active",
+			"type": "boolean"
+		}, {
+			"name": "Description",
+			"description": "the description of the entity",
+			"type": "textarea",
+			"length": 256,
+			"mandatory": false
+		}, {
+			"name": "Email",
+			"description": "the email of the entity",
+			"type": "email",
+			"length": 60,
+			"mandatory": false
+		}, {
+			"name": "URL",
+			"description": "the url of the entity",
+			"type": "url",
+			"length": 60,
+			"mandatory": true
+		}, {
+			"name": "Costs",
+			"description": "the costs of the entity",
+			"type": "number",
+			"length": 12,
+			"scale:": 2,
+			"mandatory": false,
+			"min": 0,
+			"max": 15
+		}
+	]
+}
