@@ -2,7 +2,7 @@
 	{
 		"Name": "Joe Test",
 		"ShortName": "joey",
-		"Enabled": "true",
+		"Enabled": true,
 		"Description": "Joe the tester",
 		"Email": "joe@tester.com",
 		"URL": "http://testing.com",
@@ -10,7 +10,7 @@
 	}, {
 		"Name": "Mary Ops",
 		"ShortName": "marie",
-		"Enabled": "true",
+		"Enabled": true,
 		"Description": "Mary from operations",
 		"Email": "mary@prod.com",
 		"URL": "http://prod.com",
@@ -18,7 +18,7 @@
 	}, {
 		"Name": "Alice Dev",
 		"ShortName": "alice",
-		"Enabled": "false",
+		"Enabled": false,
 		"Description": "Alice the hacker",
 		"Email": "alice@hacker.com",
 		"URL": "http://hacking.com",
